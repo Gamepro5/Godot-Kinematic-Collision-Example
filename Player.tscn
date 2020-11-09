@@ -6,10 +6,11 @@
 
 [node name="Player" type="KinematicBody"]
 
-[node name="Spatial" type="Spatial" parent="."]
+[node name="Head" type="Spatial" parent="."]
 
-[node name="Eyes" type="Camera" parent="Spatial"]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.45916, 0 )
+[node name="Eyes" type="Camera" parent="Head"]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.883241, 0 )
+current = true
 
 [node name="CollisionShape" type="CollisionShape" parent="."]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
@@ -21,7 +22,6 @@ material/0 = null
 
 [node name="Side View" type="Camera" parent="."]
 transform = Transform( -1.62921e-07, 0, -1, 0, 1, 0, 1, 0, -1.62921e-07, -22.3544, 0, 0 )
-current = true
 
 [node name="Bird\'s Eye" type="Camera" parent="."]
 transform = Transform( 1, 0, 0, 0, -1.62921e-07, 1, 0, -1, -1.62921e-07, 0, 29.5952, 0 )
